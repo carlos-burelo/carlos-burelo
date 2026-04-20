@@ -1,0 +1,88 @@
+<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --muted: #8b949e;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #ffffff;
+        --card: #f6f8fa;
+        --border: #d0d7de;
+        --text: #24292f;
+        --muted: #57606a;
+      }
+    }
+
+    .bg { fill: var(--bg); }
+
+    .card {
+      fill: var(--card);
+      stroke: var(--border);
+      stroke-width: 1;
+      rx: 14;
+    }
+
+    .title {
+      fill: var(--text);
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .text {
+      fill: var(--muted);
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 14px;
+    }
+
+    .strong {
+      fill: var(--text);
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  </style>
+
+  <rect class="bg" width="800" height="420"/>
+
+  <!-- Main (full width emphasis) -->
+  <rect class="card" x="20" y="20" width="760" height="140"/>
+  <text class="title" x="40" y="60">Carlos Burelo</text>
+
+  <text class="text" x="40" y="90">
+    <tspan x="40">Software architect focused on backend systems and developer tooling.</tspan>
+  </text>
+
+  <text class="text" x="40" y="115">
+    <tspan x="40">Builds predictable, maintainable systems with minimal abstractions.</tspan>
+  </text>
+
+  <!-- Work -->
+  <rect class="card" x="20" y="180" width="370" height="180"/>
+  <text class="strong" x="40" y="215">Work</text>
+  <text class="text" x="40" y="245">
+    <tspan x="40">Backend systems</tspan>
+    <tspan x="40" dy="18">System design</tspan>
+    <tspan x="40" dy="18">Developer tooling</tspan>
+    <tspan x="40" dy="18">Runtime exploration</tspan>
+  </text>
+
+  <!-- Approach -->
+  <rect class="card" x="410" y="180" width="370" height="180"/>
+  <text class="strong" x="430" y="215">Approach</text>
+  <text class="text" x="430" y="245">
+    <tspan x="430">Predictable systems</tspan>
+    <tspan x="430" dy="18">Minimal abstractions</tspan>
+    <tspan x="430" dy="18">Controlled complexity</tspan>
+  </text>
+
+  <!-- Footer -->
+  <text class="text" x="40" y="395">
+    github.com/carlos-burelo · linkedin.com/in/carlosburelo
+  </text>
+</svg>
